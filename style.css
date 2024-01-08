@@ -1,7 +1,11 @@
 body{
     /* background-color: #e3f2fd; */
     background-color: white;
+    font-family: 'poppins',sans-serif;
 }
+/* .logo{
+
+} */
 #navitem{
  font-weight: 600;
 }
@@ -18,7 +22,7 @@ body{
     font-family: "poppins";
 }
 .nav-link:hover{
-    color: blueviolet !important;
+    color: #524C77;
     text-decoration: underline;
     text-underline-offset: 1rem;
 }
@@ -26,6 +30,48 @@ body{
     height: 400px;
     width: 400px;
 }
+/* .content_text{
+    display: flex;
+    flex-direction: column;
+} */
+
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.icon{
+    height: 2rem;
+}
+.content_p1{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.75rem;
+}
 #heading{
-    font-family: 'poppins';
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+}
+.button_main{
+    margin-bottom: 0.5rem;
+}
+.btn{
+    padding: .75rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    margin:auto .5rem;
+}
+.btn1,.btn2{
+    border: black .1rem solid;
+    color: black;
+    background-color: white;
+}
+.btn2{
+    padding: .75rem 1.5rem;
+}
+
+.content_p2{
+    text-align: center;
+    font-size: 1.5rem;
 }
