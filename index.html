@@ -1,104 +1,139 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>portfolio</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        <script
-        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"
-    ></script>
+<head>
+  <title>portfolio</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    </head>
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
 
-    <body>
-        <header>
-            <!-- navbar -->
-            <nav class="navbar navbar-expand-lg">
-                <div class="container" id="navbar">
-                  <a class="navbar-brand" href="#">
-                    <img src="images/ag_logo.png" alt="" width="100" height="100" class="logo">
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navitem">
-                      <li class="nav-item ps-5">
-                        <a class="nav-link active " aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item ps-5">
-                        <a class="nav-link" href="#">About</a>
-                      </li>
-                      <li class="nav-item ps-5">
-                        <a class="nav-link" href="#">Services</a>
-                      </li>
-                      <li class="nav-item ps-5">
-                        <a class="nav-link" href="#">Projects</a>
-                      </li>
-                      <li class="nav-item ps-5">
-                        <a class="nav-link" href="#">Contact</a>
-                      </li>
-                    </ul>
-                  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container" id="navbar">
+        <a class="navbar-brand" href="#">
+          <!-- <img src="images/ag_logo.png" alt="" width="50" height="50" class="logo"> -->
+          <h3>{{Abhinav.G}}</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navitem">
+            <li class="nav-item ps-5">
+              <a class="nav-link active " aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item ps-5">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item ps-5">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item ps-5">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item ps-5">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <div class="container flex-lg-row flex-column" id="main_content">
+        <!-- photo -->
+        <div class="hero_image">
+          <!-- <img src="./images/profile_image.png" id="profile_image"> -->
+        </div>
+        <!-- main content -->
+        <div class="content_text">
+          <p class="content_p1">
+            Hello,I'm
+          </p>
+          <h1 id="heading">Abhinav G</h1>
+          <p class="content_p2">Full Stack Python Developer</p>
+          <div class="button_main">
+            <button class="btn btn-dark btn1">Download CV</button>
+            <button class="btn btn-dark btn2">Contact me</button>
+          </div>
+          <div class="socials">
+            <a href="https://linkedin.com" target="_blank"><img src="./images/linkedin.png" alt="" class="icon"></a>
+            <a href="https://github.com" target="_blank"><img src="./images/github.png" alt="" class="icon"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container-fluid text-center mt-5 abt">
+        <p>Get To Know More</p>
+        <h1>About Me</h1>
+        <div class="container abt_img_cont w-50">
+          <img src="./images/about_image.jpg" alt="" id="about_image">
+          <img src="./images/round_role_new-removebg.png" alt="" id="round_role">
+        </div>
+        <div class="container w-75 w-75 abt_content">
+          <p>I am a Computer Science and Engineering graduate with a
+            strong foundation in both theoretical principles and practical applications of computer science. My academic
+            journey has equipped me with a comprehensive understanding of various programming languages, algorithms, and
+            software development methodologies. In addition to my formal education, I have successfully completed a
+            NACTET certified course in Django Angular full-stack web development. I am intrigued by challenging problems
+            that push the boundaries of my understanding and am excited about the prospect of contributing to innovative
+            solutions. Open to connections and conversations, I'm excited about the prospect of collaborative learning
+            and exploring new horizons.</p>
+        </div>
+        <div class="container w-75">
+          <h2>Education</h2>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Government Engineering College,Thrissur</h5>
+                  <p class="card-text">B.Tech in Computer Science and Engineering</p>
+                  <p class="card-text fw-bold">cgpa - 7.75</p>
                 </div>
-              </nav>
-        </header>
-        <main>
-            <div class="container" id="main_content">
-                <!-- photo -->
-                <div>
-                  <img src="./images/profile_image.png" id="profile_image">
               </div>
-
-                <!-- main content -->
-                <div class="content_text">
-                   <p class="content_p1">
-                    Hello,I'm
-                   </p>
-                    <h1 id="heading">Abhinav G</h1>
-                    <p class="content_p2">Python Developer</p>
-                    <div class="button_main">
-                      <button class="btn btn-dark btn1">Download CV</button>
-                      <button class="btn btn-dark btn2">Contact me</button>
-                    </div>
-                   
-                    <div class="socials">
-                      <a href=""><img src="./images/linkedin.png" alt="" class="icon"></a>
-                      <a href=""><img src="./images/github.png" alt="" class="icon"></a>
-                    </div>
-                  
-                </div>
-                
-
             </div>
-        </main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-       
-    </body>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">GVHSS Payyoli</h5>
+                  <p class="card-text">12th - Computer Science</p>
+                  <p class="card-text fw-bold">Percentage - 97.4</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+
+</body>
+
 </html>
