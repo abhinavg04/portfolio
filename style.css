@@ -181,3 +181,19 @@ body{
 .fa-brands{
     font-size: 100px;
 }
+.skill_name{
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.skill_container{
+    padding: 1.5rem;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    width: 600px;
+}
