@@ -31,7 +31,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container" id="navbar">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#" style="color: #7a7b94;">
           <!-- <img src="images/ag_logo.png" alt="" width="50" height="50" class="logo"> -->
           <h3>{{Abhinav.G}}</h3>
         </a>
@@ -54,7 +54,7 @@
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item ps-5">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -90,17 +90,19 @@
     <section id="about">
       <div class="container-fluid text-center mt-5 abt">
         <p>Get To Know More</p>
-        <h1>About Me</h1>
+        <h1 class="fw-bold">About Me</h1>
         <div class="container abt_img_cont w-50">
           <img src="./images/about_image.jpg" alt="" id="about_image" class="img-fluid">
           <img src="./images/round_role_new-removebg.png" alt="" id="round_role" class="img-fluid">
         </div>
         <div class="container w-75 w-75 abt_content">
-          <p>I am a Computer Science and Engineering graduate with a
+          <!-- <p>I am a Computer Science and Engineering graduate with a
             strong foundation in both theoretical principles and practical applications of computer science. My academic
             journey has equipped me with a comprehensive understanding of various programming languages, algorithms, and
             software development methodologies. In addition to my formal education, I have successfully completed a
-            NACTET certified course in Django Angular full-stack web development. I am intrigued by challenging problems
+            NACTET certified course in Django Angular full-stack web development.
+          </p> -->
+            <p> I am intrigued by challenging problems
             that push the boundaries of my understanding and am excited about the prospect of contributing to innovative
             solutions. Open to connections and conversations, I'm excited about the prospect of collaborative learning
             and exploring new horizons.</p>
@@ -111,7 +113,7 @@
             <div class="col-sm-6">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title"><i class="fa-solid fa-graduation-cap fa-bounce mx-2"></i>Government Engineering
+                  <h5 class="card-title"><i class="fa-solid fa-graduation-cap mx-2"></i>Government Engineering
                     College,Thrissur</h5>
                   <p class="card-text">B.Tech in Computer Science and Engineering (2019-23)</p>
                   <p class="card-text fw-bold">cgpa - 7.75</p>
@@ -122,7 +124,7 @@
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">
-                    <i class="fa-solid fa-school fa-bounce mx-2"></i>GVHSS Payyoli
+                    <i class="fa-solid fa-school mx-2"></i>GVHSS Payyoli
                   </h5>
                   <p class="card-text">12th - Computer Science (2017-19)</p>
                   <p class="card-text fw-bold">Percentage - 97.4</p>
@@ -134,7 +136,7 @@
             <div class="col-sm-6 mx-auto mt-3">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title"><i class="fa-solid fa-school fa-bounce mx-2"></i>Thiruvangoor HSS</h5>
+                  <h5 class="card-title"><i class="fa-solid fa-school mx-2"></i>Thiruvangoor HSS</h5>
                   <p class="card-text">10th 2016</p>
                   <p class="card-text fw-bold">Percentage - 98.8</p>
                 </div>
@@ -142,13 +144,14 @@
             </div>
           </div>
         </div>
-        <img src="./images/arrow.png" alt="" id="arro_down">
+        <a href="#skill"><img src="./images/arrow.png" alt="" id="arro_down"></a>
       </div>
     </section>
 
     <!-- skill section -->
     <section id="skill">
-      <h3 class="myskill text-center" style="padding-top: 60px; font-size: 3rem;">My Skills</h3>
+      <p class="text-center" style="padding-top: 60px;">Explore my</p>
+      <h3 class="myskill text-center fw-bold" style="font-size: 3rem;">Skills</h3>
       <div class="container d-flex justify-content-evenly mt-4">
         <div class="skill_container">
           <h2 class="skill_name">Front - End</h2>
@@ -176,19 +179,76 @@
             <img src="./images/icons8-firebase-480.png" alt="" width="120px">
           </div>
         </div>
-        <img src="./images/arrow.png" alt="" id="arro_down">
+        <a href="#projects"><img src="./images/arrow.png" alt="" id="arro_down"></a>
       </div>
     </section>
 
     <section id="projects">
-      <div style="text-align: center;" class="mt-5">
+      <div style="text-align: center;" class="project-container">
         <p>Browse My Recent</p>
-        <h2 style="font-size: 3rem;">Projects</h2>
+        <h2 style="font-size: 3rem;" class="fw-bold">Projects</h2>
+        <div class="project-list container d-flex flex-column flex-lg-row justify-content-between">
+          <div class="card bg-dark text-white project" style="width: 24rem;">
+            <img src="./images/portfolio_poster.jpg" alt="Card image">
+            <div class="layer">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+          </div>
+          <div class="card bg-dark text-white project" style="width: 24rem;">
+            <img src="./images/portfolio_poster.jpg" alt="Card image">
+            <div class="layer">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+          </div>
+          <div class="card bg-dark text-white project" style="width: 24rem;">
+            <img src="./images/portfolio_poster.jpg" alt="Card image">
+            <div class="layer">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+          </div>
+        <a href="#contact"><img src="./images/arrow.png" alt="" id="arro_down"></a>
+      </div>
+    </section>
+    <!-- contact section -->
+    <section id="contact" class="text-center">
+      <div class="container">
+        <p>Get in Touch</p>
+        <h1 class="fw-bold">Contact Me</h1>
+        <div class="container contact_box d-flex justify-content-evenly align-items-center mt-3">
+          <div class="container d-flex w-50"><img src="./images/email.png" alt="Email icon" class="icon contact-icon email-icon">
+          <a href="mailto:abhinavg1024@gmail.com" style="text-decoration: none; color: black;">
+            <p class="m-0 px-2" style="font-size: larger;">abhinavg1024@gmail.com</p>
+          </a></div>
+          <div class="container d-flex w-50 justify-content-end"><img src="./images/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+            <a href="https://www.linkedin.com/in/abhinav-g-628850192/" style="text-decoration: none; color: black;">
+              <p class="m-0 px-2" style="font-size: larger;">LinkedIn</p></div>
+            </a>
+        </div>
+        <a href="#"><img src="./images/arrow.png" alt="" id="arro_down"></a>
       </div>
     </section>
   </main>
-  <footer>
-    <!-- place footer here -->
+  <footer class="container-fluid p-4 rounded" style="background-color: #d2d2e0;">
+    <div class="d-lg-flex container w-75 justify-content-between">
+      <div>
+        <span><h3>{{Abhinav.G}}</h3></span>
+      </div>
+      <!-- <div class="copyright">
+        <p>developed and maintained by <a href="#" target="_blank">company</a></p>
+      </div> -->
+      <div>
+        <ul class="d-flex gap-3 list-unstyled">
+          <li><a href="https://github.com/abhinavg04" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a></li>
+          <li><a href="https://www.instagram.com/_abhinav__g/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
 

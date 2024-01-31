@@ -31,9 +31,7 @@ body{
     font-weight: bold;
     margin-block: 2px;
 }
-.logo{
-    transform: scale(1.5);
-}
+
 #navitem{
  font-weight: 400;
 }
@@ -48,7 +46,6 @@ body{
 .nav-link{
     color: black;
     font-size: 15px;
-    font-family: "poppins";
 }
 .nav-link:hover{
     color: #524C77;
@@ -175,7 +172,7 @@ body{
 
 #skill{
     height: 100vh;
-    background-color: white;
+    background-color: #F9F9F9;
     position: relative;
 }
 .fa-brands{
@@ -197,3 +194,70 @@ body{
     text-align: center;
     width: 600px;
 }
+.project-container{
+    height: 100vh;
+    position: relative;
+    background-color:#d2d2e0;
+    padding-top: 80px;
+}
+.project-list{
+    margin-top: 20px;
+    height: 400px;
+}
+.project{
+        overflow: hidden;
+        position: relative;
+}
+.project img{
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s;
+}
+.layer{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    background: linear-gradient(
+        hsl(0,0%,0%,0),
+        hsl(0,0%,0%,0.2) 10%,
+        hsl(0,0%,0%,1)
+    ); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10px;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+.project:hover .layer{
+    height: 100%;
+}
+.project:hover img{
+    transform: scale(1.1);
+}
+
+#contact{
+    height: 80vh;
+    background-color: #F9F9F9;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+.contact_box{
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    height: 100px;
+    width: 500px;
+}
+footer{
+    height: 150px;
+}
+#contact div a img{
+    transform: rotate(180deg);
+}
+.list-unstyled li a{
+    color: black;
+}
+
