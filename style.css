@@ -13,6 +13,7 @@ body{
 #home{
     position: sticky;
     top: 0;
+    height: 100vh;
 }
 #arro_down{
     width: 40px;
