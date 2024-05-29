@@ -244,6 +244,7 @@ body{
     height: 80vh;
     background-color: #F9F9F9;
     position: relative;
+    padding-top: 5rem;
     display: grid;
     place-items: center;
 }
