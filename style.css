@@ -236,6 +236,9 @@ body{
 .project:hover img{
     transform: scale(1.1);
 }
+#github-project{
+    width: 20rem;
+}
 
 #contact{
     height: 80vh;
