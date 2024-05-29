@@ -1,6 +1,4 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     scroll-behavior:smooth;
 }
@@ -13,8 +11,10 @@ body{
 #home{
     position: sticky;
     top: 0;
-    height: 100dvh;
+    height: 100vh;
 }
+
+  
 #arro_down{
     width: 40px;
     position: absolute;
@@ -23,6 +23,7 @@ body{
     margin-right: 20px;
     margin-bottom: 20px;
 }
+/* navbar  */
 .navbar{
     background-color: white;
     box-shadow:  0 0 10px rgba(0,0,0,.09);
@@ -36,14 +37,6 @@ body{
 #navitem{
  font-weight: 400;
 }
-#main_content{
-    /* background-color: aqua; */
-    height: 600px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 100px;
-}
 .nav-link{
     color: black;
     font-size: 15px;
@@ -52,10 +45,14 @@ body{
     color: #524C77;
     text-decoration: underline;
     text-underline-offset: 1rem;
+} 
+#main_content{
+    height: 600px;
+    margin-top: 100px;
 }
 .hero_image{
-    height: 400px;
-    width: 400px;
+    min-height: 400px;
+    min-width: 400px;
     background-image: url("./images/linkedinProfile.png");
     background-size: cover;
     border: 3px solid #2d2e32;
@@ -101,10 +98,6 @@ body{
     font-size: 3rem;
     text-align: center;
     font-weight: 600;
-}
-.button_main{
-    margin-bottom: 0.5rem;
-    margin-inline: 60px;
 }
 .btn{
     padding: .75rem;
@@ -172,9 +165,10 @@ body{
   }
 
 #skill{
-    height: 100vh;
+    height: auto;
     background-color: #F9F9F9;
     position: relative;
+    padding-bottom: 90px;
 }
 .fa-brands{
     font-size: 100px;
@@ -193,7 +187,7 @@ body{
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
-    width: 600px;
+    /* width: 600px; */
 }
 .project-container{
     height: 100vh;
@@ -201,9 +195,13 @@ body{
     background-color:#d2d2e0;
     padding-top: 80px;
 }
+
 .project-list{
     margin-top: 20px;
-    height: 400px;
+    height: 200px;
+}
+.project-list .card{
+    height: 30rem;
 }
 .project{
         overflow: hidden;

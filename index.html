@@ -27,7 +27,8 @@
 </head>
 
 <body>
-  <header>
+     <!-- ======= Header ======= -->
+  <header id="header">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container" id="navbar">
@@ -59,31 +60,31 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> 
   </header>
   <main>
-    <section id="home">
-      <div class="container flex-lg-row flex-column" id="main_content">
-        <!-- photo -->
+    <section id="home" style="background-color: #f5f8fd;">
+      <div class="container d-md-flex justify-content-center align-items-center" id="main_content">
+       <!-- photo -->
         <div class="hero_image">
           <!-- <img src="./images/profile_image.png" id="profile_image"> -->
         </div>
-        <!-- main content -->
-        <div class="content_text">
-          <p class="content_p1">
-            Hello,I'm
-          </p>
-          <h1 id="heading">Abhinav G</h1>
-          <p class="content_p2">Full Stack Python Developer</p>
-          <div class="button_main">
-            <button class="btn btn-dark btn1">Download CV</button>
-            <button class="btn btn-dark btn2">Contact me</button>
-          </div>
-          <div class="socials">
-            <a href="https://www.linkedin.com/in/abhinav-g-628850192/" target="_blank"><img src="./images/linkedin.png" alt="" class="icon"></a>
-            <a href="https://github.com/abhinavg04" target="_blank"><img src="./images/github.png" alt="" class="icon"></a>
-          </div>
-        </div>
+       <!-- main content -->
+       <div class="content_text mx-5 pt-5 d-flex flex-column">
+         <p class="content_p1">
+           Hello,I'm
+         </p>
+         <h1 id="heading">Abhinav G</h1>
+         <p class="content_p2">Full Stack Python Developer</p>
+         <div class="button_main ms-5 d-flex">
+           <button class="btn btn-dark btn1">Download CV</button>
+           <button class="btn btn-dark btn2"><a href="mailto:abhinavg1024@gmail.com" class="text-decoration-none text-dark">Contact me</a></button>
+         </div>
+         <div class="socials my-2">
+           <a href="https://www.linkedin.com/in/abhinav-g-628850192/" target="_blank"><img src="./images/linkedin.png" alt="" class="icon"></a>
+           <a href="https://github.com/abhinavg04" target="_blank"><img src="./images/github.png" alt="" class="icon"></a>
+         </div>
+       </div> 
       </div>
     </section>
 
@@ -91,7 +92,7 @@
       <div class="container-fluid text-center mt-5 abt">
         <p>Get To Know More</p>
         <h1 class="fw-bold">About Me</h1>
-        <div class="container abt_img_cont w-50">
+        <div class="container abt_img_cont w-50 d-none d-sm-block">
           <img src="./images/about_image.jpg" alt="" id="about_image" class="img-fluid">
           <img src="./images/round_role_new-removebg.png" alt="" id="round_role" class="img-fluid">
         </div>
@@ -109,8 +110,8 @@
         </div>
         <div class="container w-75 py-4">
           <h2>Education</h2>
-          <div class="row pt-2">
-            <div class="col-lg-6">
+          <div class="row pt-2 g-3">
+            <div class="col-lg-6 col-md-6">
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title"><i class="fa-solid fa-graduation-cap mx-2"></i>Government Engineering
@@ -120,7 +121,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">
@@ -133,7 +134,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-6 mx-auto mt-3">
+            <div class="col-lg-6 mx-auto mt-3 col-md-6">
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title"><i class="fa-solid fa-school mx-2"></i>Thiruvangoor HSS</h5>
@@ -152,8 +153,9 @@
     <section id="skill">
       <p class="text-center" style="padding-top: 60px;">Explore my</p>
       <h3 class="myskill text-center fw-bold" style="font-size: 3rem;">Skills</h3>
-      <div class="container d-flex justify-content-evenly mt-4">
-        <div class="skill_container">
+      <div class="container mt-4">
+        <div class="row">
+         <div class="col my-sm-4 skill_container mx-2">
           <h2 class="skill_name">Front - End</h2>
           <div class="container d-flex justify-content-evenly my-3">
             <i class="fa-brands fa-html5" style="color: #ff7b00;"></i>
@@ -168,7 +170,7 @@
             <i class="fa-brands fa-react" style="color: #3c82fb;"></i>
           </div>
         </div>
-        <div class="skill_container">
+        <div class="col my-sm-4 skill_container">
           <h2 class="skill_name">Back - End</h2>
           <div class="container d-flex justify-content-evenly align-items-center">
             <img src="./images/icons8-python-480.png" width="110px" height="110px">
@@ -180,6 +182,9 @@
           </div>
         </div>
         <a href="#projects"><img src="./images/arrow.png" alt="" id="arro_down"></a>
+        </div>
+         </div>
+          
       </div>
     </section>
 
@@ -187,33 +192,45 @@
       <div style="text-align: center;" class="project-container">
         <p>Browse My Recent</p>
         <h2 style="font-size: 3rem;" class="fw-bold">Projects</h2>
-        <div class="project-list container d-flex flex-column flex-lg-row justify-content-between">
-          <div class="card bg-dark text-white project" style="width: 24rem;">
-            <img src="./images/portfolio_poster.jpg" alt="Card image">
-            <div class="layer">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text">Last updated 3 mins ago</p>
+        <div class="container d-none d-sm-block">
+          <div class="d-xs-block d-md-none">
+           <a href="github.com/abhinavg04"><img src="./images/github.png" alt=""></a>
+          </div>
+          <div class="row project-list">
+            <div class="col-md-12 col-lg-4">
+              <div class="card bg-dark text-white project" style="width: 24rem;">
+                <img src="./images/goldimage.png" alt="Card image">
+                <div class="layer">
+                  <h5 class="card-title">Gold rate tracker</h5>
+                  <p class="card-text"> Developed a comprehensive gold rate tracking website using Angular for the dynamic frontend and Django REST Framework for the robust backend. This application displays real-time gold prices from various organizations in Kerala.</p>
+                  <p class="card-text"><a target="_blank" href="https://github.com/abhinavg04/GoldRateTracker-API.git">Github</a> </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+              <div class="card bg-dark text-white project" style="width: 24rem;">
+                <img src="./images/ecommerce.jpg" alt="Card image">
+                <div class="layer">
+                  <h5 class="card-title">Ecommerce webapp with sentiment analysis</h5>
+                  <p class="card-text">Built a e-commerce website using Django (Python) for the backend and HTML/CSS (Bootstrap 5) for the frontend.</p>
+                  <p class="card-text"><a target="_blank" href="https://github.com/abhinavg04/E-Commerce-Django.git">Github</a> </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+              <div class="card bg-dark text-white project" style="width: 24rem;">
+                <img src="./images/malware.jpg" alt="Card image">
+                <div class="layer">
+                  <h5 class="card-title">Malware Prediction in Android Applications</h5>
+                  <p class="card-text">A malware detection system for Android APKs using BiLSTM algorithm, achieving a detection accuracy of 91.87 % on a benchmark dataset</p>
+                  <p class="card-text"> <a target="_blank" href="https://github.com/abhinavg04/android_malicious">Github</a> </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="card bg-dark text-white project" style="width: 24rem;">
-            <img src="./images/portfolio_poster.jpg" alt="Card image">
-            <div class="layer">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text">Last updated 3 mins ago</p>
-            </div>
-          </div>
-          <div class="card bg-dark text-white project" style="width: 24rem;">
-            <img src="./images/portfolio_poster.jpg" alt="Card image">
-            <div class="layer">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text">Last updated 3 mins ago</p>
-            </div>
-          </div>
-        <a href="#contact"><img src="./images/arrow.png" alt="" id="arro_down"></a>
+        </div>
       </div>
+      <a href="#contact"><img src="./images/arrow.png" alt="" id="arro_down"></a>
     </section>
     <!-- contact section -->
     <section id="contact" class="text-center">
