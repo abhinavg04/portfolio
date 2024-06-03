@@ -66,7 +66,7 @@
     <section id="home" style="background-color: #f5f8fd;">
       <div class="container d-md-flex justify-content-center align-items-center" id="main_content">
        <!-- photo -->
-        <div class="hero_image">
+        <div class="hero_image d-none d-sm-block">
           <!-- <img src="./images/profile_image.png" id="profile_image"> -->
         </div>
        <!-- main content -->
@@ -76,7 +76,7 @@
          </p>
          <h1 id="heading">Abhinav G</h1>
          <p class="content_p2">Full Stack Python Developer</p>
-         <div class="button_main ms-5 d-flex">
+         <div class="button_main d-flex justify-content-center">
            <a href="assets/AbhinavG_resume.pdf" download class="btn btn-dark btn1">Download CV</a>
            <button class="btn btn-dark btn2"><a href="mailto:abhinavg1024@gmail.com" class="text-decoration-none text-dark">Contact me</a></button>
          </div>
@@ -192,10 +192,10 @@
       <div style="text-align: center;" class="project-container">
         <p>Browse My Recent</p>
         <h2 style="font-size: 3rem;" class="fw-bold">Projects</h2>
-        <div class="d-xs-block d-md-none">
+        <div class="d-xs-block d-lg-none">
           <a href="https://github.com/abhinavg04"><img id="github-project" src="./images/github.png" alt=""></a>
          </div>
-        <div class="container d-none d-md-block">
+        <div class="container d-none d-lg-block">
           <div class="row project-list">
             <div class="col-md-12 col-lg-4">
               <div class="card bg-dark text-white project" style="width: 24rem;">
@@ -233,15 +233,22 @@
       <a href="#contact"><img src="./images/arrow.png" alt="" id="arro_down"></a>
     </section>
     <!-- contact section -->
-    <section id="contact" class="text-center d-none d-sm-block">
-      <div class="container">
+    <section id="contact" class="text-center">
+      <div class="d-sm-block d-sm-none">
+        <p>Get in Touch</p>
+        <h1 class="fw-bold">Contact Me</h1>
+        <p class="m-0 px-2" style="font-size: larger;">abhinavg1024@gmail.com</p>
+      </div>
+      <div class="container d-none d-sm-block">
         <p>Get in Touch</p>
         <h1 class="fw-bold">Contact Me</h1>
         <div class="container contact_box d-flex justify-content-evenly align-items-center mt-3">
-          <div class="container d-flex w-50"><img src="./images/email.png" alt="Email icon" class="icon contact-icon email-icon">
-          <a href="mailto:abhinavg1024@gmail.com" style="text-decoration: none; color: black;">
+          <div class="container d-flex w-50">
+            <img src="./images/email.png" alt="Email icon" class="icon contact-icon email-icon">
+            <a href="mailto:abhinavg1024@gmail.com" style="text-decoration: none; color: black;">
             <p class="m-0 px-2" style="font-size: larger;">abhinavg1024@gmail.com</p>
-          </a></div>
+          </a>
+        </div>
           <div class="container d-flex w-50 justify-content-end"><img src="./images/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
             <a href="https://www.linkedin.com/in/abhinav-g-628850192/" style="text-decoration: none; color: black;">
               <p class="m-0 px-2" style="font-size: larger;">LinkedIn</p></div>
